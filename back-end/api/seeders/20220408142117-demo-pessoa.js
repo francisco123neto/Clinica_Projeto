@@ -1,4 +1,4 @@
-'use strict';
+const bcryptjs = require('bcryptjs')
 
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -10,6 +10,8 @@ module.exports = {
       tipoSanguineo: 'A+',
       sexo: 'Masculino',
       statusPessoa: 'Paciente',
+      email: 'john@gmail.com',
+      senha: await bcryptjs.hash('14ff8fd', 12),
       createdAt: new Date(),
       updatedAt: new Date()
     },
@@ -20,6 +22,8 @@ module.exports = {
       tipoSanguineo: 'O+',
       sexo: 'Feminino',
       statusPessoa: 'Paciente',
+      email: 'maria@gmail.com',
+      senha: await bcryptjs.hash('112adaqfd', 12),
       createdAt: new Date(),
       updatedAt: new Date()
     },
@@ -30,6 +34,8 @@ module.exports = {
       tipoSanguineo: 'O+',
       sexo: 'Masculino',
       statusPessoa: 'Médico',
+      email: 'marcos@gmail.com',
+      senha: await bcryptjs.hash('sgwt3321', 12),
       createdAt: new Date(),
       updatedAt: new Date()
     }], {});
