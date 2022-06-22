@@ -5,40 +5,40 @@ export default class SignUp extends Component {
       <form>
         <h3>Sign Up</h3>
         <div className="mb-3">
-          <label>First name</label>
+          <label>Primeiro Nome</label>
           <input
             type="text"
             className="form-control"
-            placeholder="First name"
+            placeholder="Primeiro Nome"
           />
         </div>
         <div className="mb-3">
-          <label>Last name</label>
-          <input type="text" className="form-control" placeholder="Last name" />
+          <label>Ultimo Nome</label>
+          <input type="text" className="form-control" placeholder="Ultimo Nome" />
         </div>
         <div className="mb-3">
-          <label>Email address</label>
+          <label>Email</label>
           <input
             type="email"
             className="form-control"
-            placeholder="Enter email"
+            placeholder="Email"
           />
         </div>
         <div className="mb-3">
-          <label>Password</label>
+          <label>Senha</label>
           <input
             type="password"
             className="form-control"
-            placeholder="Enter password"
+            placeholder="Senha"
           />
         </div>
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
-            Sign Up
+            Cadastrar
           </button>
         </div>
         <p className="forgot-password text-right">
-          Already registered <a href="/sign-in">sign in?</a>
+          Já possui registro <a href="/sign-in">Fazer Login?</a>
         </p>
       </form>
     )

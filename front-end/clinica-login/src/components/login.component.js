@@ -5,19 +5,19 @@ export default class Login extends Component {
       <form>
         <h3>Sign In</h3>
         <div className="mb-3">
-          <label>Email address</label>
+          <label>Email</label>
           <input
             type="email"
             className="form-control"
-            placeholder="Enter email"
+            placeholder="Email"
           />
         </div>
         <div className="mb-3">
-          <label>Password</label>
+          <label>Senha</label>
           <input
             type="password"
             className="form-control"
-            placeholder="Enter password"
+            placeholder="Senha"
           />
         </div>
         <div className="mb-3">
@@ -28,17 +28,17 @@ export default class Login extends Component {
               id="customCheck1"
             />
             <label className="custom-control-label" htmlFor="customCheck1">
-              Remember me
+              Lembre-se de mim
             </label>
           </div>
         </div>
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
-            Submit
+            Entrar
           </button>
         </div>
         <p className="forgot-password text-right">
-          Forgot <a href="#">password?</a>
+        Esqueci <a href="#"> Minha senha</a>
         </p>
       </form>
     )
