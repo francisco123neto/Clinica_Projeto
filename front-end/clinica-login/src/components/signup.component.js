@@ -3,7 +3,7 @@ export default class SignUp extends Component {
   render() {
     return (
       <form>
-        <h3>Sign Up</h3>
+        <h3>Cadastrar</h3>
         <div className="mb-3">
           <label>Primeiro Nome</label>
           <input
